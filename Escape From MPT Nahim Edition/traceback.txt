@@ -1,15 +1,15 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 235, in script
-    gg "Но где его искать?"
+  File "game/script.rpy", line 331, in script
+    jump atack
 ScriptError: could not find label 'atack'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 235, in script
-    gg "Но где его искать?"
+  File "game/script.rpy", line 331, in script
+    jump atack
   File "C:\Users\user\Desktop\renpy-8.3.2-sdk\renpy\ast.py", line 1699, in execute
     rv = renpy.game.script.lookup(target)
   File "C:\Users\user\Desktop\renpy-8.3.2-sdk\renpy\script.py", line 1103, in lookup
@@ -19,4 +19,4 @@ ScriptError: could not find label 'atack'.
 Windows-10-10.0.22631 AMD64
 Ren'Py 8.3.2.24090902
 Escape From MPT Nahim Edition 1.0
-Thu Oct 31 16:59:36 2024
+Thu Oct 31 21:56:48 2024

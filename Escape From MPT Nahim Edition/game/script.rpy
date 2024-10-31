@@ -1,4 +1,4 @@
-﻿# Вы можете расположить сценарий своей игры в этом файле.
+# Вы можете расположить сценарий своей игры в этом файле.
 
 # Определение персонажей игры.
 define gg = Character('[ggname]', color="#e4b10c")
@@ -21,7 +21,7 @@ label start:
 
     scene black
     with fade
-    $ ggname = renpy.input("Как зовут главного героя")     
+    $ ggname = renpy.input("Как зовут главного героя", length = 12, allow = "qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM-ЙЦУКЕНГШЩЗХЪЭЖДЛОРПАВЫФЮБЬТИМСЧЯъхзщшгнекуцйэждлорпавыфюбьтимсчя").strip()     
 
     "Однажды по пути в техникум:"
     scene bg metro
@@ -76,6 +76,7 @@ label start:
     gord "Ну пошли тогда куртки повесим и в кабинет"
     jump class
     return
+
 # сон в кабинете
 label class:
     scene bg parta 1
@@ -327,7 +328,7 @@ label kabinet2:
     $ kod = True
     gg "Отлично, я нашел код."
     gg "Теперь у меня есть все чтобы сбежать!"
-    jump atack
+    jump ataka
 return
 
 
